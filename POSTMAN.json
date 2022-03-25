@@ -1,0 +1,189 @@
+{
+	"id": "4e2783e1-8c82-0b30-f7cf-1a278b49a341",
+	"name": "Pruebas Ejercicio de evaluacion",
+	"description": "",
+	"order": [
+		"2c72e65c-11d3-f2a0-9bca-feb300be917f",
+		"725613e7-42a7-1a8e-400f-4e183b332122",
+		"e41aadd3-f4fa-fe94-ef87-a93bf0eaff95",
+		"2efe4c14-a6ea-b863-e9fa-74a2453fbd90"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1648230874694,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2c72e65c-11d3-f2a0-9bca-feb300be917f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/comercio",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4e2783e1-8c82-0b30-f7cf-1a278b49a341",
+			"data": [
+				{
+					"key": "rut_comercio",
+					"value": "555555554",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "almacen a",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Crea comercio",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1648230877979,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2efe4c14-a6ea-b863-e9fa-74a2453fbd90",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/anular",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4e2783e1-8c82-0b30-f7cf-1a278b49a341",
+			"data": [
+				{
+					"key": "id_venta",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cod_seguridad",
+					"value": "cod0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Anular venta y restar puntos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1648231089963,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "725613e7-42a7-1a8e-400f-4e183b332122",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/dispositivos",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4e2783e1-8c82-0b30-f7cf-1a278b49a341",
+			"data": [
+				{
+					"key": "id_comercio",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Crea dispositivo asociado a comercio",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1648230926683,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e41aadd3-f4fa-fe94-ef87-a93bf0eaff95",
+			"headers": "id_dispositivo: 1\nmonto: 100\ncod_seguridad: codseg\n",
+			"headerData": [
+				{
+					"key": "id_dispositivo",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "monto",
+					"value": "100",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "cod_seguridad",
+					"value": "codseg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/ventas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4e2783e1-8c82-0b30-f7cf-1a278b49a341",
+			"data": [
+				{
+					"key": "id_dispositivo",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "monto",
+					"value": "100",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cod_seguridad",
+					"value": "cod0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "realizar venta",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1648230987358,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
